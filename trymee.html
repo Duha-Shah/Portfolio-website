@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <style>
+        .first-image
+        {
+           border-radius: 50%;
+        }
+        header
+        {
+            background-color: #333;
+            color:#fff;
+            padding-top: 15px; 
+            min-height: 10px; 
+            border-bottom: #ccc 3px solid;  
+            text-align: center; 
+        }
+        .flex-container 
+        {
+            width: 80%;
+            /* margin: auto; */
+            overflow: hidden;
+            display:flex;
+        }
+        body
+        {
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+            font-size: larger;
+        }
+        nav 
+        {
+            margin-top: 10px;
+        }
+        section
+        {
+            padding:10px;
+            margin: 20px;
+            background-color: rgb(210, 209, 209);
+            border-radius: 8px;
+            font-size: larger;
+        }
+        div
+        {
+            padding: 20px;
+        } 
+        footer
+        {
+            background-color: #333;
+            color:#fff;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+        #contact
+        {
+            background-color: #333;
+        }
+        nav a 
+        {
+            color:#fff;
+            padding:0 15px;
+        }
+        .custom-input 
+        {
+            width:300px;
+            height:25px;
+            border-radius: 8px;
+            font-size: large;
+            margin-left: 15px;
+        }
+        .custom-submit
+        {
+            width:100px;
+            height:50px;
+            align-items: center;
+            font-size: large;
+            margin-left: 170px;
+            border-radius: 8px;
+            background-color:#716d6d ; 
+            
+        }
+        .custom-select
+        {
+            width:300px;
+            height:35px;
+            border-radius: 8px;
+            font-size: large;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <h1><big><big><b><u>MY PORTFOLIO</u></b></big></big></h1></br>
+
+    <div class="container">
+            <nav>
+                <a href="#about me">About Me</a>
+                |
+                <a href="#education">Education</a>
+                |
+                <a href="#skills">Skills</a>
+                |
+                <a href="#projects">Projects</a>
+                |
+                <a href="#collaborate">Collaborate</a>
+                |
+                <a href="#contact">Contact</a>
+            </nav>
+    </div>
+    </header>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <main>
+
+        <div class="flex-container">       
+            <section>
+                <img src="myimage2.jpg" height="300" alt="Image1" class="first-image">
+                <!-- <img src="/portfolio/myimage.jpg" height="300" alt="Image2" class="second-image"> -->
+            </section>
+    
+<hr>
+
+            <section id="about me">
+                <big> <h2><u>About Me</u></h2></big>
+                <p>
+                    Hello! I'm Duha Shah, a dedicated and passionate student pursuing a Bachelor of Technology in Computer Science from CUK. I’m excited about developing innovative solutions and continuously learning new technologies.
+                </p>
+            </section>
+         </div>
+     
+<hr>
+
+ 
+
+        <section id="education">
+            <div class="container">    
+                <p>
+        
+                    <big> <h2><u>Education</u></h2></big>
+                        <big><h3><b>Graduation</b></h3></big>
+                        <ul>
+                            <li>B.TECH in CSE from Central University of Kashmir</li>
+                        </ul>
+                        <big><h3><b>Schooling</b></h3></big>
+                        <ul>
+                            <li>12th from Presentation Convent Hr. Sec. School, Rajbagh Srinagar, year 2020</li>
+                            <li>10th from Presentation Convent Hr. Sec. School, Rajbagh Srinagar, year 2018</li>
+                        </ul>
+                </p> 
+            </div>
+        </section>
+<hr>
+        <section id="skills">
+            <div class="container">    
+            <p>     
+                    <big> <h2><u>Skills</u></h2></big>
+                        <big><h3><b>Credit Course</b></h3></big>
+                        <ul>
+                                <li>C Languages</li>
+                                <li>OOPS</li>
+                                <li>DBMS</li>
+                                <li>Data Structures</li>
+                                <li>Algorithms</li>
+                                <li>Digital Electronics</li>
+                        </ul>
+        <br>
+                        <big><h3><b>Extra Credit Course</b></h3></big>
+                        <ul>
+                                <li>HTML</li>
+                                <li>CSS (currently learning)</li>
+                        </ul>
+            </p> 
+            </div>
+        </section>
+<hr>
+
+        <section id="projects">
+            <div class="container">     
+                
+                    <big> <h2><u>Projects</u></h2></big>
+                        <p>
+                            I'm currently working on my portfolio project to showcase my skills and projects. Stay tuned for updates! 
+                        </p>
+            </div>            
+        </section>
+<hr>
+
+    <section id="collaborate">
+        <div class="container">    
+            <big> <h2><u>Join Us</u></h2></big>
+            <p>
+                If you're intrested in working with us then fill the below form to get a confirmation mail.
+            </p>
+            <form action="action.php">
+                <label for="name">
+                    <big><b>name:</b></big><input type="text" class="custom-input" placeholder="enter your name" required>
+                </label>
+        <br> 
+        <br> 
+                <label for="e-mail">
+                    <big><b>e-mail:</b></big><input type="e-mail" class="custom-input" placeholder="enter your e-mail id" required>
+                </label>
+        <br>
+        <br>
+                <!-- <div> -->
+                    <big><b>gender:</b></big>         
+                        <label for="male">
+                            <input type="radio" value="male" name="gender" id="male" required>male
+                        </label>
+                        <label for="female">
+                            <input type="radio" value="female" name="gender" id="female" required>female
+                        </label>
+                        <label for="other">
+                            <input type="radio" value="other" name="gender" id="other" required>other
+                        </label>
+                <!-- </div>         -->
+        <br>
+        <br> 
+                <label for="city" >
+                    <big><b> choose your city:</b></big> 
+                    <select class="custom-select" name="city"  required>
+                        <option value="choose your state" >please choose your state</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="J&K">J&K</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Lukhnow">Lucknow</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <input type="submit" class="custom-submit" value="submit">
+            </form>
+        </div>
+    </section>
+
+        <br>
+        <hr>  
+        <br>
+                        
+
+      
+        
+<br>
+    </main>
+
+    <hr>
+
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <big> <h2><u>Contact Us</u></h2></big>
+                <a href="https://www.instagram.com/pinkstory_jewellery?igsh=MXBld25jbGJnZWI4ag==" target="main">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" height="50"></a>
+                <a href="https://www.linkedin.com/in/duha-shah-28a51331a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="main">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" height="50"></a> 
+                        <a href="shahduha1706@gmail.com" target="main"></a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" height="50"></a>  
+                    <br>
+            </div>
+        </section>
+        <p>© 2024 Duha Shah. All rights reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>
+
+
